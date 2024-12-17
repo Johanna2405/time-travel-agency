@@ -164,6 +164,7 @@ section {
   padding: 5% 5%;
 }
 
+/* Want to add mobile menu here */
 nav ul {
   display: flex;
   gap: 1em;
