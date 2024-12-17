@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Travel Agency</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" alt="Time Travel Agency Logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <div class="hero-text">
+          <h1>Travel trough Time with us!</h1>
+          <p class="subline">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <div class="buttons">
+            <a href="#services" class="btn1">Our Services</a>
+            <a href="#contact" class="btn2">Get in Touch</a>
+          </div>
+        </div>
+        <img src="9824086.png" alt="something futuristic" />
+      </section>
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel sequi
+          voluptas repellendus nesciunt voluptatibus tenetur inventore nobis
+          perferendis nemo, voluptatem reprehenderit rerum debitis illum vero
+          facilis optio dolorum nulla adipisci.
+        </p>
+        <a href="#contact" class="btn1">Get in Touch</a>
+      </section>
+      <section id="services">
+        <h2>Services</h2>
+        <div class="service-wrapper">
+          <div class="service-container">
+            <img src="clock.png" alt="Icon" class="icon" />
+            <h3>Service 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Repudiandae animi excepturi recusandae aspernatur incidunt, dolor
+              eveniet non expedita porro laudantium officia.
+            </p>
+          </div>
+          <div class="service-container">
+            <img src="clock.png" alt="Icon" class="icon" />
+            <h3>Service 2</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Repudiandae animi excepturi recusandae aspernatur incidunt, dolor
+              eveniet non expedita porro laudantium officia.
+            </p>
+          </div>
+          <div class="service-container">
+            <img src="clock.png" alt="Icon" class="icon" />
+            <h3>Service 3</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Repudiandae animi excepturi recusandae aspernatur incidunt, dolor
+              eveniet non expedita porro laudantium officia.
+            </p>
+          </div>
+        </div>
+        <a href="#contact" class="btn1">Get in Touch</a>
+      </section>
+      <section id="gallery">
+        <h2>Gallery</h2>
+        <p class="subline">Lorem Ipsum</p>
+        <div class="gallery-container">
+          <div class="gallery">
+            <div class="gallery-item">
+              <img src="https://picsum.photos/400" alt="Gallery image 1" />
+            </div>
+            <div class="gallery-item">
+              <img src="https://picsum.photos/500" alt="Gallery image 2" />
+            </div>
+            <div class="gallery-item">
+              <img src="https://picsum.photos/600" alt="Gallery image 3" />
+            </div>
+            <div class="gallery-item">
+              <img src="https://picsum.photos/700" alt="Gallery image 4" />
+            </div>
+            <div class="gallery-item">
+              <img src="https://picsum.photos/800" alt="Gallery image 5" />
+            </div>
+            <div class="gallery-item">
+              <img src="https://picsum.photos/900" alt="Gallery image 6" />
+            </div>
+            <div class="gallery-item">
+              <img src="https://picsum.photos/500" alt="Gallery image 7" />
+            </div>
+            <div class="gallery-item">
+              <img src="https://picsum.photos/400" alt="Gallery image 8" />
+            </div>
+            <div class="gallery-item">
+              <img src="https://picsum.photos/900" alt="Gallery image 9" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Time to Travel!</h2>
+        <p class="subline">Fasten your seatbelt!</p>
+        <hr />
+        <div class="contact-container">
+          <div class="contact-information">
+            <ul>
+              <li>
+                <a href="tel:0123456789">Phone: 0123456789</a>
+              </li>
+              <li>
+                <a href="mailto:info@time-travel.com"
+                  >Mail: info@time-travel.com</a
+                >
+              </li>
+              <li>
+                <p>
+                  Adress: Time Travel Rd. 13 <br />
+                  12345 Towm
+                </p>
+              </li>
+            </ul>
+          </div>
+          <form>
+            <h3>Request your personal offer</h3>
+            <label for="name">Name:</label>
+            <input
+              id="name"
+              type="text"
+              placeholder="Your name"
+              required
+            /><br />
+            <label for="email">E-Mail:</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="Your email"
+              required
+            /><br />
+            <label for="phone">Phone:</label>
+            <input
+              id="phone"
+              type="tel"
+              placeholder="Your phone number"
+              required
+            /><br />
+
+            <legend><h4>Your Journey</h4></legend>
+            <label for="slot">Choose your timeslot:</label>
+            <select name="slot" id="slot" required>
+              <option value="">--Please choose a timeslot--</option>
+              <option value="50's">50's to 70's</option>
+              <option value="70's">70's to 90's</option>
+              <option value="90's">90's til now</option></select
+            ><br />
+            <label for="location">Choose your location:</label><br />
+            <div class="radio">
+              <input
+                type="radio"
+                id="europe"
+                name="location"
+                value="europe"
+                required
+              />
+              <label for="europe">Europe</label>
+              <input
+                type="radio"
+                id="america"
+                name="location"
+                value="america"
+              />
+              <label for="america">North / South America</label>
+              <input type="radio" id="asia" name="location" value="asia" />
+              <label for="asia">Asia</label>
+              <input type="radio" id="africa" name="location" value="africa" />
+              <label for="africa">Africa</label>
+              <input
+                type="radio"
+                id="australia"
+                name="location"
+                value="australia"
+              />
+              <label for="australia">Australia and New Zealand</label>
+            </div>
+            <legend><h4>Additional information</h4></legend>
+            <label for="message">Message:</label><br />
+            <textarea id="message" placeholder="Any questions?"></textarea
+            ><br />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <a href="#top"
+          ><img
+            src="logo.png"
+            alt="Time Travel Agency Logo"
+            class="logo-footer"
+        /></a>
+        <div class="sitemap">
+          <ul>
+            <h4>Sitemap</h4>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="sm">
+          <h4>Follow us on social media</h4>
+          <img
+            class="sm-icon"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/CIS-A2K_Instagram_Icon_%28Black%29.svg/2048px-CIS-A2K_Instagram_Icon_%28Black%29.svg.png"
+            alt="Instagram"
+            href="#"
+          />
+          <img
+            class="sm-icon"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/2048px-2023_Facebook_icon.svg.png"
+            alt="facebook"
+            href="#"
+          />
+        </div>
+      </div>
+      <p class="copyright">© 2024 | Time Travel Agency</p>
+    </footer>
+  </body>
+</html>
