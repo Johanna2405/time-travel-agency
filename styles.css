@@ -336,13 +336,6 @@ label {
   margin: 2% 0;
 }
 
-.radio {
-  display: grid;
-  grid-template-columns: 1fr 5fr;
-  padding-top: 4%;
-  gap: 1em;
-}
-
 .footer-container {
   display: flex;
   gap: 2em;
