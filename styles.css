@@ -83,6 +83,9 @@ a {
   font-size: 1em;
   margin: 3% 0;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
 }
 
 .btn1:hover {
@@ -92,6 +95,9 @@ a {
     var(--gradient-color-1) 51%,
     var(--primary-color) 100%
   );
+  transform: scale(1.05);
+  background: var(--gradient-color-1);
+  box-shadow: 0 0 15px var(--primary-color);
 }
 
 .btn2 {
@@ -106,10 +112,23 @@ a {
   background-color: 000000;
   margin: 3% 0;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
 }
 
 .btn2:hover {
-  border: 1px solid var(--gradient-color-1);
+  transform: scale(1.03);
+  background: rgba(229, 4, 115, 0.1);
+  border-color: var(--acent-color);
+  box-shadow: 
+    0 0 10px var(--secondary-color),
+    inset 0 0 15px var(--secondary-color);
+  letter-spacing: 2px;
+}
+
+.btn1:hover, .btn2:hover {
+  animation: pulse 1.5s infinite;
 }
 
 form button {
@@ -495,5 +514,17 @@ hr {
   .contact-container {
     grid-template-columns: 1fr;
     gap: 2em;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    filter: brightness(100%);
+  }
+  50% {
+    filter: brightness(120%);
+  }
+  100% {
+    filter: brightness(100%);
   }
 }
