@@ -164,7 +164,6 @@ section {
   padding: 5% 5%;
 }
 
-/* Want to add mobile menu here */
 nav ul {
   display: flex;
   gap: 1em;
@@ -182,6 +181,10 @@ nav a {
 
 nav a:hover {
   border: 1px solid var(--primary-color);
+}
+
+.mobile {
+  display: none;
 }
 
 #hero {
@@ -441,6 +444,45 @@ hr {
 
   .sm {
     align-items: center;
+  }
+
+  /* New mobile menu */
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .drop-down-content {
+    display: none;
+    position: absolute;
+    top: 12vh;
+    right: 4%;
+    left: 4%;
+    background-color: #f0eef73c;
+    padding: 4% 2%;
+    border-radius: 30px;
+  }
+
+  .mobile:hover .drop-down-content,
+  li {
+    display: flex;
+  }
+
+  .drop-down-btn {
+    border: 1px solid var(--primary-color);
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2.5px;
+    border-radius: 30px;
+    font-size: 1em;
+    background-color: #00000000;
+    margin: 3% 0;
+    cursor: pointer;
   }
 }
 
